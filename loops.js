@@ -33,7 +33,17 @@ while (num2 < 11) {
 }
 
 let num3 = 10;
+let store = []
 while (num3 > 0) {
-  console.log(num3);
+//   console.log(num3);
+ store.push(num3);
   num3--;
+}
+console.log(store);
+
+let arr = ["food", "goods", false, {name:"john, doe"}]
+let idx = 0
+while (idx < arr.length) {
+    console.log(arr[idx]);
+    idx++
 }
