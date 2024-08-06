@@ -96,3 +96,26 @@ let yy = getItem([5, 10, 69, 10], 0)
 let zz = getItem([true,  false, null, 3, 7], 1)
 console.log(xx, yy, zz)
 
+
+// Arrow Function In JavaScript - es6
+/**
+ * Syntax
+ * const varname = () => ()
+ */
+
+// const  varname = function(){}
+const validator3 = (val2) => {
+  let cleanVal2 = val2.toLowerCase();
+  cleanVal2 = cleanVal2.trim();
+
+  console.log(cleanVal2);
+};
+
+ const simple = (a,b) => {
+  return a > b
+ }
+
+ const simpler = (a,b) => a > b
+
+ console.log(simple(5, 10));
+ console.log(simpler(5, 10));
