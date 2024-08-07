@@ -71,31 +71,27 @@ const validator2 = function (val2) {
 };
 
 let val2 = validator2("John dOe");
-  
 
 // Wrie a function that takes an array parameter named arr and returns the last item in the array
 
 function lastitem(arr) {
-    return arr[arr.length - 1]
+  return arr[arr.length - 1];
 }
 
-let x = lastitem([5, 10, 69, 10])
-let y = lastitem(["pen", "book", "car"])
-let z = lastitem([true,  false, null])
-console.log(x, y, z)
-
+let x = lastitem([5, 10, 69, 10]);
+let y = lastitem(["pen", "book", "car"]);
+let z = lastitem([true, false, null]);
+console.log(x, y, z);
 
 // write a function getItem that takes an array parameter named arr and a number param named n. The function sholud return the item that matches the index n in the array
 
-
-function getItem(arr,n){
-    return arr[n]
+function getItem(arr, n) {
+  return arr[n];
 }
-let xx = getItem(["pen", "book", "car"], 2)
-let yy = getItem([5, 10, 69, 10], 0)
-let zz = getItem([true,  false, null, 3, 7], 1)
-console.log(xx, yy, zz)
-
+let xx = getItem(["pen", "book", "car"], 2);
+let yy = getItem([5, 10, 69, 10], 0);
+let zz = getItem([true, false, null, 3, 7], 1);
+console.log(xx, yy, zz);
 
 // Arrow Function In JavaScript - es6
 /**
@@ -111,11 +107,21 @@ const validator3 = (val2) => {
   console.log(cleanVal2);
 };
 
- const simple = (a,b) => {
-  return a > b
- }
+const simple = (a, b) => {
+  return a > b;
+};
 
- const simpler = (a,b) => a > b
+const simpler = (a, b) => a > b;
 
- console.log(simple(5, 10));
- console.log(simpler(5, 10));
+console.log(simple(5, 10));
+console.log(simpler(5, 10));
+
+//  Scopes
+/**
+ * This helps in understanding the accesibility of a variable in javascript
+ *
+ * types
+ * - Global Scopes
+ * - Function Scopes/ Block Scopes
+*/
+
