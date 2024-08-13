@@ -271,3 +271,23 @@ for (const item of arr5) {
   }
   
 }
+
+
+/**
+ * For In Loop --- Gets the index of the items in an array
+ * 
+ * Syntax
+ * for(const elem in array){
+ *  ...expression}
+ */
+
+for (const item in arr5) {
+  if (item === "Mike") {
+    console.log(item + " Tyson");    
+  } else {
+    console.log(item);
+  }
+  
+}
+
+// At each iteration, the item will rep the index of corresponding item in the array
