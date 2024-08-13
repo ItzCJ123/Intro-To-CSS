@@ -265,17 +265,15 @@ for (let i = 0; i < users.length; i++) {
 const arr5 = ["John", "Mike", "Jane", "Smith"];
 for (const item of arr5) {
   if (item === "Mike") {
-    console.log(item + " Tyson");    
+    console.log(item + " Tyson");
   } else {
     console.log(item);
   }
-  
 }
-
 
 /**
  * For In Loop --- Gets the index of the items in an array
- * 
+ *
  * Syntax
  * for(const elem in array){
  *  ...expression}
@@ -283,11 +281,206 @@ for (const item of arr5) {
 
 for (const item in arr5) {
   if (item === "Mike") {
-    console.log(item + " Tyson");    
+    console.log(item + " Tyson");
   } else {
     console.log(item);
   }
-  
 }
 
 // At each iteration, the item will rep the index of corresponding item in the array
+// break and continue
+// break- Stops the loops
+// continue- skips the current iteration and moves to the next one
+
+// Array Methods  - maps, filter, foreach, sort
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    // break;
+    continue;
+  }
+  console.log(i);
+}
+
+const names = [
+  "Ava Morales",
+  "Liam Patel",
+  "Emily Chen",
+  "Ethan Hall",
+  "Lily Tran",
+  "Noah Kim",
+  "Sophia Lee",
+  "Oliver Brown",
+  "Mia Davis",
+  "Benjamin Martin",
+];
+
+// Map - returns a new array with modification of the original
+
+// map with with ordinary function as callback
+const modName = names.map(attMy);
+function attMy(item) {
+  return "My " + item;
+}
+console.log(modName);
+// map with anonymous function a callback
+const modName2 = names.map(function (item) {
+  return "My " + item;
+});
+function attMy(item) {
+  return "My " + item;
+}
+console.log(modName2);
+
+// map with arrow function as callback
+const modName3 = names.map((item) => "My " + item);
+function attMy(item) {
+  return "My " + item;
+}
+console.log(modName3);
+
+const arrNum = [4, 8, 3, 9, 31, 34, 5, 1, 83];
+const arrNum2 = arrNum.map((item) => item * 2);
+console.log(arrNum2);
+
+// filter - this filters item that matches given criteria and return to a new array
+const nameFilter = names.filter((x) => x.length < 12);
+const nameFilter2 = names.filter((x) => x.toLowerCase().includes("hall"));
+console.log(nameFilter);
+console.log(nameFilter2);
+
+const randomArray = [
+  {
+    firstname: "Emily",
+    lastname: "Johnson",
+    age: 25,
+    country: "USA",
+    state: "California",
+    email: "emily.johnson@example.com",
+    phone: "123-456-7890",
+    isActive: true,
+    isVerified: true,
+  },
+  {
+    firstname: "Michael",
+    lastname: "Brown",
+    age: 30,
+    country: "Canada",
+    state: "Ontario",
+    email: "michael.brown@example.com",
+    phone: "987-654-3210",
+    isActive: false,
+    isVerified: true,
+  },
+  {
+    firstname: "Sarah",
+    lastname: "Lee",
+    age: 28,
+    country: "Australia",
+    state: "New South Wales",
+    email: "sarah.lee@example.com",
+    phone: "555-123-4567",
+    isActive: true,
+    isVerified: false,
+  },
+  {
+    firstname: "John",
+    lastname: "Doe",
+    age: 35,
+    country: "UK",
+    state: "London",
+    email: "john.doe@example.com",
+    phone: "111-222-3333",
+    isActive: true,
+    isVerified: true,
+  },
+  {
+    firstname: "Jane",
+    lastname: "Smith",
+    age: 22,
+    country: "France",
+    state: "Paris",
+    email: "jane.smith@example.com",
+    phone: "777-888-9999",
+    isActive: false,
+    isVerified: false,
+  },
+  {
+    firstname: "Robert",
+    lastname: "Williams",
+    age: 40,
+    country: "Germany",
+    state: "Berlin",
+    email: "robert.williams@example.com",
+    phone: "444-555-6666",
+    isActive: true,
+    isVerified: true,
+  },
+  {
+    firstname: "Laura",
+    lastname: "Davis",
+    age: 32,
+    country: "Italy",
+    state: "Rome",
+    email: "laura.davis@example.com",
+    phone: "666-777-8888",
+    isActive: false,
+    isVerified: true,
+  },
+  {
+    firstname: "Kevin",
+    lastname: "Miller",
+    age: 29,
+    country: "Spain",
+    state: "Madrid",
+    email: "kevin.miller@example.com",
+    phone: "999-111-2222",
+    isActive: true,
+    isVerified: false,
+  },
+  {
+    firstname: "Rebecca",
+    lastname: "Hall",
+    age: 38,
+    country: "China",
+    state: "Beijing",
+    email: "rebecca.hall@example.com",
+    phone: "222-333-4444",
+    isActive: false,
+    isVerified: true,
+  },
+  {
+    firstname: "Christopher",
+    lastname: "Martin",
+    age: 26,
+    country: "Japan",
+    state: "Tokyo",
+    email: "christopher.martin@example.com",
+    phone: "888-999-0000",
+    isActive: true,
+    isVerified: true,
+  },
+];
+
+const even = arrNum.filter((x) => x % 2 === 0);
+console.log(even);
+
+const onlineUser = randomArray.filter((x) => x.isActive);
+// .map(x => x.firstname)
+console.log(onlineUser);
+
+// foreach -
+arrNum.forEach((x) => console.log(x));
+randomArray.forEach((x) =>
+  console.log(
+    `Username of ${x.firstname} ${x.lastname} is  ${
+      x.firstname + x.lastname + x.age
+    }`
+  )
+);
+
+
+// sort 
+// sort() method sorts the elements of an array in place and returns the array.
+const sorted = arrNum.sort((a, b) => a - b);
+console.log(sorted);
