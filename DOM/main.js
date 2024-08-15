@@ -65,3 +65,23 @@ const elem2 = document.querySelectorAll("h2, li, DOM, p");
 console.log(elem2);
 
 // Manipulating or Modifying the DOM
+
+// .createElement()
+//.createTextNode()
+const h1Elem = document.createElement("h1");
+const h1Text = document.createTextNode("Bye World");
+h1Elem.append(h1Text)
+console.log(h1Elem);
+
+// .appendChild()
+document.body.appendChild(h1Elem)
+
+// Create an Element li and insert it into our HTML Document at the ul elementt before the li with the class DOM
+const liElem = document.createElement("li")
+liElem.textContent = "C++" //innerHTML, innerText
+
+const existingli = document.getElementsByClassName("DOM")[0] //This is where we secify where the element will be inserted before
+
+const ulElem = document.getElementsByTagName("ul")[0] //This is where th elemnt will be inserted into
+
+ulElem.insertBefore(liElem,existingli) 
