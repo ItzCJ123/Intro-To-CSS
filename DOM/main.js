@@ -301,5 +301,15 @@ const elemClass = heading.getAttribute("class")
 heading.setAttribute("id", "heading2")
 heading.setAttribute("title", "A Heading Element")
 heading.setAttribute("style", "color:red; border: 2px solid black")
+
+// Setting Attributes using assignment operator
+heading.id = "headings"
+heading.style = 'color: blue; background-color: gray; border: 2px solid green;'
+heading.style.color = 'yellow'
+heading.style.backgroundColor = "#fff"
+
+
+
+
 console.log(elemID);
 console.log(elemClass);
