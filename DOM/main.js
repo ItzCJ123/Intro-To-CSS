@@ -296,20 +296,37 @@ document.getElementById("form").insertBefore(select, putselect);
 
 // Accessing Attributes from elements in DOM
 const heading = document.querySelector("h2");
-const elemID = heading.getAttribute("id")
-const elemClass = heading.getAttribute("class")
-heading.setAttribute("id", "heading2")
-heading.setAttribute("title", "A Heading Element")
-heading.setAttribute("style", "color:red; border: 2px solid black")
+const elemID = heading.getAttribute("id");
+const elemClass = heading.getAttribute("class");
+heading.setAttribute("id", "heading2");
+heading.setAttribute("title", "A Heading Element");
+heading.setAttribute("style", "color:red; border: 2px solid black");
 
 // Setting Attributes using assignment operator
-heading.id = "headings"
-heading.style = 'color: blue; background-color: gray; border: 2px solid green;'
-heading.style.color = 'yellow'
-heading.style.backgroundColor = "#fff"
-
-
-
-
+heading.id = "headings";
+heading.style = "color: blue; background-color: gray; border: 2px solid green;";
+heading.style.color = "yellow";
+heading.style.backgroundColor = "#fff";
 console.log(elemID);
 console.log(elemClass);
+
+// Task 2
+const rOr = document.body.children[3].children[1];
+rOr.setAttribute("id", "ruby");
+rOr.setAttribute("class", "rails");
+rOr.setAttribute("style", "color: blue;");
+console.log(rOr.textContent);
+
+document.getElementById("email").type = "email";
+
+let para = document.body.getElementsByClassName("DOM")[1];
+const paraText = para.innerHTML.split("e");
+para.innerHTML = paraText.join("")
+ 
+const obj = {
+  a: "hello",
+  b: "world"
+}
+
+const {a, b} = obj;
+console.log(a);
