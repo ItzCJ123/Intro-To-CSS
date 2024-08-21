@@ -1,7 +1,3 @@
-document.getElementsByClassName("box1")[0].style.backgroundColor = "red";
-
-
-
 const changeColor = () => {
     const box1 = document.getElementsByClassName("box1")[0]
     if (box1.style.backgroundColor == "red") {
@@ -32,4 +28,27 @@ const changeH1 = () => {
 
 document.getElementsByTagName("button")[1].onclick = () => {
     document.getElementsByClassName("box2")[0].style.backgroundColor = "red"
+}
+
+// Handling form in DOM
+const users = [
+    {username: "johndoe", password: "john1234"}, 
+    {username: "miketyson", password: "mike1234"},
+    {username: "stevegerald", password: "steve1234"},
+    {username: "georgemichael", password: "george1234"}
+]
+
+function handleSubmit(e) {
+    e.preventDefault() //Prevent Default Form Submission
+    const username = document.getElementById("username")
+    const password = document.getElementById("password")
+    if (!username.value && !password.value) {
+        username.style.border = "1px solid red"
+        password.style.border = "1px solid red"
+    }
+
+}
+
+document.getElementById("form").onsubmit = (e) => {
+    handleSubmit(e)
 }
