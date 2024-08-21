@@ -7,7 +7,7 @@ const changeColor = () => {
   }
 };
 
-// Math.floor(Math.random() *(max-min +1) + min
+// Math.floor(Math.random() *(max-min +1) + min)
 console.log(Math.floor(Math.random() * 10 - 0 + 1));
 
 const colors = ["red", "blue", "cyan", "lightgreen", "gray", "purple"];
