@@ -28,7 +28,7 @@ document.getElementsByTagName("button")[1].onclick = () => {
 };
 
 // Handling form in DOM
-const users = [
+const db = [
   { username: "johndoe", password: "john1234" },
   { username: "miketyson", password: "mike1234" },
   { username: "stevegerald", password: "steve1234" },
@@ -39,10 +39,14 @@ function handleSubmit(e) {
   e.preventDefault(); //Prevent Default Form Submission
   const username = document.getElementById("username");
   const password = document.getElementById("password");
-  if (!username.value && !password.value) {
+  if (!username.value) {
     username.style.border = "1px solid red";
+  }
+  if (!password.value) {
     password.style.border = "1px solid red";
   }
+  console.log(username.value);
+  console.log(password.value);
 }
 
 document.getElementById("form").onsubmit = (e) => {
