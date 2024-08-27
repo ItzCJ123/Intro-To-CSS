@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+}
+
+.nav{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #DAC479;
+}
+
+.navlink{
+    padding: 10px 20px;
+}
+
+.navlink:hover{
+    color: white;
+    background-color: #DAC479;
+}

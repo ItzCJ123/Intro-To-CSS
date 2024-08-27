@@ -11,6 +11,19 @@
             height: 200px;
             border: 2px solid #000;
         }
+
+        .err{
+            display: none;
+            color: red;
+            font-style: italic;
+        }
+
+        .login{
+            color: rgb(55, 135, 55);
+            font-size: 2.3rem;
+            font-style: italic;
+            display: none;
+        }
     </style>
 </head>
 
@@ -31,15 +44,28 @@
             <div class="box box2"></div>
             <button>Click Me</button>
         </section>
+        <h2 class="login">Login Successful!</h2> 
         <form action="" id="form">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
-            <br>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
+            <h2>Fill in your details.</h2>
+            <p class="err">Error</p>
+            <div>
+                <label for="username">Username</label>
+                <br>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" id="password">
+                <span>ii</span>
+            </div>
             <br>
             <input type="submit" value="Submit">
         </form>
+        <section>
+            <p class="display"></p>
+            <input type="search" id="search">
+        </section>
     </main>
     <script src="event.js"></script>
 </body>
