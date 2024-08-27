@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -22,8 +25,34 @@
             </a>
         </nav>
     </header>
-    <main class="main"></main>
-    <footer>
+    <main class="main">
+        <section class="search">
+            <fieldset>
+                <input type="text">
+                <i class="fa-solid fa-clapperboard"></i>
+            </fieldset>
+        </section>
+        <section class="featured">
+            <h2 class="f-heading">Featured</h2>
+            <div class="container">
+                <div class="movie-card">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="title-sec">
+                        <h3 class="title">Avatar</h3>
+                        <p class="year">2005</p>
+                    </div>
+                    <p class="desc"><span>Sypnosis</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae vero nobis libero beatae eum iusto fugit distinctio, dolores sit repellendus ipsa praesentium? Quisquam, cumque officia. Nisi iste harum quam delectus.</p>
+                    <div class="genre-sec">
+                        <p class="genre">Horror, Action</p>
+                        <p class="rating">4.3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
         <p>Made With &hearts; by <a href="">Chimobim Enebe</a>. &copy; 2024. All Right Reserved.</p>
     </footer>
 </body>

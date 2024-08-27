@@ -27,3 +27,30 @@
     color: white;
     background-color: #DAC479;
 }
+
+.footer{
+    text-align: center;
+}
+
+.search fieldset{
+    width: 40%;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search fieldset input{
+    width: 90%;
+    font-size: 1.4rem;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+.fa-clapperboard{
+    font-size: 1.8rem;
+}
