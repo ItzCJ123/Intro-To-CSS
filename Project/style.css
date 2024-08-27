@@ -1,56 +1,92 @@
-.header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.logo{
-    width: 150px;
+.logo {
+  width: 150px;
 }
 
-.nav{
-    gap: 10px;
-    display: flex;
-    align-items: center;
+.nav {
+  gap: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.nav a{
-    text-decoration: none;
+.nav a {
+  text-decoration: none;
+  color: #dac479;
+}
+
+.navlink {
+  padding: 10px 20px;
+}
+
+.navlink:hover {
+  color: white;
+  background-color: #dac479;
+}
+
+.footer {
+  text-align: center;
+}
+
+.search fieldset {
+  width: 40%;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search fieldset input {
+  width: 90%;
+  font-size: 1.4rem;
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+.fa-clapperboard {
+  font-size: 1.8rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.movie-card {
+  max-width: 300px;
+  width: 100%;
+}
+
+.featured{
+    font-weight: 900;
+}
+
+.movie-card figure,
+.movie-card image {
+  width: 100%;
+  height: auto;
+}
+
+.title-sec, .genre-sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc span{
+    font-weight: 700;
     color: #DAC479;
 }
 
-.navlink{
-    padding: 10px 20px;
-}
-
-.navlink:hover{
-    color: white;
-    background-color: #DAC479;
-}
-
-.footer{
-    text-align: center;
-}
-
-.search fieldset{
-    width: 40%;
-    display: inline-flex;
-    align-items: center;
-    border-radius: 20px;
-}
-
-.search{
-    display: flex;
-    justify-content: center;
-}
-
-.search fieldset input{
-    width: 90%;
-    font-size: 1.4rem;
-    padding: 5px;
-    outline: none;
-    border: none;
-}
-.fa-clapperboard{
-    font-size: 1.8rem;
+.fa-star, -year{
+    color: #DAC479;
 }
