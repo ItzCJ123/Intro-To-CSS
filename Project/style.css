@@ -60,6 +60,7 @@
   display: flex;
   justify-content: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .movie-card {
@@ -75,6 +76,7 @@
 .movie-card image {
   width: 100%;
   height: auto;
+  margin: 0;
 }
 
 .title-sec, .genre-sec {
